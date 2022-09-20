@@ -5,7 +5,7 @@ import butcherPigImage from './assets/butcherPig.jpeg'
 const App = () => {
 
   // ACTION ITEM: to make the development process easier there are some preassigned words in the input field, when you are ready for your full user experience delete the test words passed to useState and pass an empty string
-  const [userInput, setUserInput] = useState("apple through queen squeal fry fluent")
+  const [userInput, setUserInput] = useState("apple queen")
   const [inputTranslated, setInputTranslated] = useState("")
 
   // ACTION ITEM: the "myPigLatinCodeHere" function is where you will put your logic to translate the sentence entered by the user into Pig Latin
@@ -32,7 +32,31 @@ const App = () => {
       console.log("vowelsArray:", vowelsArray)
 
       // ACTION ITEM: your Pig Latin logic goes here!
+    
+      if(vowelsArray.includes(eachWord.charAt(0))){
+        return eachWord.concat("way")
+      } else if(eachWord.includes("qu")){
+        return eachWord.substring(eachWord.indexOf("qu") + 2) +eachWord.substring(0, eachWord.indexOf("qu") + 2)+ "ay"
+      } else if(vowelsArray.length === 0){
+        return eachWord.substring(eachWord.indexOf("y")).concat(
+        eachWord.substring(0, eachWord.indexOf("y")) + "ay")
+      } else {
+         return eachWord.substring(eachWord.indexOf(vowelsArray[0])).concat(eachWord.substring(0, eachWord.indexOf(vowelsArray[0]))+ "ay")
+       }
 
+  
+
+
+
+      // pseudo code:============================================
+      //create a function****
+      // arrayOfUserInput.split() user input into array
+      //arrayOfUserInput searches eachWord indexes eachWord 
+      // vowelsArray finds vowel in eachWord
+      //write a conditional
+      //if eachWord 
+      //if it begins with a vowel "a,e,i,o,u"
+      //return string + way
     
 
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
@@ -88,7 +112,7 @@ const App = () => {
         </div>
         <p>{inputTranslated}</p>
       </div>
-      <footer>&copy; 2022 | Coded by: Your Names Here!</footer>
+      <footer>&copy; 2022 | Coded by: Lyssa and Christian!</footer>
     </div>
   )
 }
