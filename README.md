@@ -43,6 +43,11 @@ To get started, find the `myPigLatinCodeHere` function, and write your code. Eve
 Oday ouyay eakspay igpay atinlay? If you are scratching your head at that statement, we at LEARN Academy have you covered. Our development team has been tasked with creating a Pig Latin translator application. This app will take regular English words and covert them to Pig Latin. With this application you will eakspay igpay atinlay uentlyflay in no time!
 
 **Story 1: In order to see English words converted to Pig Latin, as the user of the application, I need to see words beginning with a vowel translated to add "way" the end.**
+// pseudo code:============================================
+//create a function
+//write a conditional
+//if it begins with a vowel "a,e,i,o,u"
+//return string + way
 
 **Branch:** vowel-functionality
 
