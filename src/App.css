@@ -7,11 +7,15 @@
 
 h1 {
   font-size: 4rem;
+  color: whitesmoke;
+  background-color: palevioletred;
+  border-radius: 5%;
+  text-shadow: .5rem .5rem .3rem black;
 }
 
 .butcher-pig-image {
   margin: 1rem;
-  width: 14rem;
+  width: 16rem;
 }
 
 /* ---BODY--- */
@@ -20,10 +24,19 @@ button {
   border-radius: 0.9rem;
   margin: 1rem;
   padding: 1rem;
+  background-color: white;
+  color: blue
 }
-
+.button1 {
+  border-radius: 0.9rem;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: blue;
+  color: white
+}
 .body-container {
   padding-bottom: 3rem;
+  background-color: pink;
 }
 
 .page-container {
@@ -32,7 +45,7 @@ button {
 }
 
 .input-section {
-  background-color: grey;
+  background-color: palevioletred;
   border-radius: .5rem;
   color: #fff;
   margin: 1rem;
